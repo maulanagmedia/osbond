@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    //pop up free token
+    <dimen name="margin_left__pop_up_free_token">31dp</dimen>
+    <dimen name="width_pop_up_free_token">480.5dp</dimen>
+    <dimen name="height_pop_up_free_token">620dp</dimen>
+    <dimen name="text_size_isian_pop_up_free_token">21.7sp</dimen>
+    <dimen name="text_size_btnOk_popup_free_token">21.7sp</dimen>
+
+    //pop up penjualan midtrans
+    <dimen name="width_popup_beli_token_midtrans">375dp</dimen>
+    <dimen name="height_popup_beli_token_midtrans">750dp</dimen>
+    <dimen name="text_size_judul_popup_beli_token_midtrans">30sp</dimen>
+    <dimen name="text_size_pilih_paket_popup_beli_token_midtrans">19.5sp</dimen>
+    <dimen name="height_isian_paket">270dp</dimen>
+    <dimen name="text_size_pilih_cabang_popup_beli_token_midtrans">19.5dp</dimen>
+    <dimen name="text_size_jumlah_popup_beli_token_midtrans">19.5sp</dimen>
+    <dimen name="text_size_isian_jumlah_popup_beli_token_midtrans">27sp</dimen>
+    <dimen name="text_size_button_beli_popup_beli_token_midtrans">21sp</dimen>
+
+    //recyclerView pop up penjualan midtrans
+    <dimen name="image_rv_popup_beli_token_midtrans">75dp</dimen>
+    <dimen name="text_size_judul_paket">21sp</dimen>
+    <dimen name="height_keterangan_paket">75dp</dimen>
+    <dimen name="text_size_keterangan_paket">15sp</dimen>
+    <dimen name="text_size_harga_paket">21sp</dimen>
+
+    //popup verifikasi
+    <dimen name="width_popup_verifikasi">450dp</dimen>
+    <dimen name="height_popup_verifikasi">525dp</dimen>
+    <dimen name="text_size_judul_popup_verifikasi">30sp</dimen>
+    <dimen name="text_size_judul_isi_popup_verifikasi">21sp</dimen>
+    <dimen name="text_size_keterangan_isi_popup_verifikasi">18sp</dimen>
+    <dimen name="text_size_harga_isi_popup_verifikasi">21sp</dimen>
+    <dimen name="text_size_jumlah_isi_popup_verifikasi">18sp</dimen>
+    <dimen name="text_size_subtotal_isi_popup_verifikasi">21sp</dimen>
+    <dimen name="text_size_isi_subtotal_isi_popup_verifikasi">30dp</dimen>
+    <dimen name="text_size_btnLanjut_isi_popup_verifikasi">21sp</dimen>
+</resources>

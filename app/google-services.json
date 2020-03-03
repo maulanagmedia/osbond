@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "419044144706",
+    "firebase_url": "https://osbond-e66d3.firebaseio.com",
+    "project_id": "osbond-e66d3",
+    "storage_bucket": "osbond-e66d3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:419044144706:android:1f2f47ea3b62f978",
+        "android_client_info": {
+          "package_name": "gmedia.net.id.osbond"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "419044144706-pah79lf3q5jta6gaohb2a0l0ut1devsa.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "gmedia.net.id.osbond",
+            "certificate_hash": "5ebfb2388f680e827a9eeda45101695681e51e0d"
+          }
+        },
+        {
+          "client_id": "419044144706-eqk22fkijf03ucmgpdugd4aji76lvtrk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyByummEx6FZq1vYrlP2ee1EU4fbzZ_pmfs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "419044144706-eqk22fkijf03ucmgpdugd4aji76lvtrk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

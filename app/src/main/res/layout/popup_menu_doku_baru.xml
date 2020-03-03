@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/layoutPopUp"
+        android:layout_width="@dimen/width_popup_beli_token_midtrans"
+        android:layout_height="@dimen/height_popup_beli_token_midtrans"
+        android:layout_centerInParent="true"
+        android:background="@drawable/background_popup_setting_kupon"
+        android:orientation="vertical"
+        android:weightSum="10">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@drawable/background_layoutkuning_setting_kupon"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="0.95"
+                android:background="@drawable/background_layoutmerah_setting_kupon">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="pilih token"
+                    android:textColor="#FFFFFF"
+                    android:textSize="@dimen/text_size_judul_popup_beli_token_midtrans"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="9"
+            android:background="#FFFFFF"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="9"
+                android:orientation="vertical"
+                android:weightSum="10">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="8.7"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:text="Pilih Paket :"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/text_size_pilih_paket_popup_beli_token_midtrans" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="10dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="vertical">
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/rvView"
+                            android:layout_width="match_parent"
+                            android:layout_height="@dimen/height_isian_paket" />
+
+                        <cz.intik.overflowindicator.OverflowPagerIndicator
+                            android:id="@+id/indicatorPopupMenu"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/layoutDropdownCabang"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Pilih Cabang"
+                            android:textColor="#000000"
+                            android:textSize="@dimen/text_size_pilih_cabang_popup_beli_token_midtrans" />
+
+                        <Spinner
+                            android:id="@+id/dropdownJumlahJamEmail"
+                            android:layout_width="240dp"
+                            android:layout_height="wrap_content"
+                            android:theme="@style/ThemeOverlay.AppCompat.Light" />
+                    </LinearLayout>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:text="Jumlah :"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/text_size_jumlah_popup_beli_token_midtrans" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <EditText
+                            android:id="@+id/inputanJumlahKuponDoku"
+                            android:layout_width="80dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/bcg_inputan_popup_doku"
+                            android:inputType="number"
+                            android:singleLine="true"
+                            android:textAlignment="center"
+                            android:textColor="#000000"
+                            android:textSize="@dimen/text_size_isian_jumlah_popup_beli_token_midtrans" />
+                    </LinearLayout>
+                </LinearLayout>
+                <!--<LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="3"
+                    android:orientation="vertical"
+                    android:weightSum="5">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="0dp"
+                        android:layout_weight="1.5"
+                        android:text="Kepada"
+                        android:textSize="13dp" />
+
+                    <EditText
+                        android:id="@+id/inputanEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_marginLeft="-5dp"
+                        android:layout_marginTop="-5dp"
+                        android:layout_weight="3.4"
+                        android:backgroundTint="@android:color/transparent"
+                        android:hint="example@gmail.com"
+                        android:singleLine="true"
+                        android:textColor="#000000"
+                        android:textSize="15dp" />
+                </LinearLayout>-->
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <RelativeLayout
+                        android:id="@+id/btnSaveMidtrans"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.8"
+                        android:background="@drawable/bcg_btn_popup_red">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="Beli"
+                            android:textColor="#ffffff"
+                            android:textSize="@dimen/text_size_button_beli_popup_beli_token_midtrans"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+                    <!--<RelativeLayout
+                        android:id="@+id/btnSave"
+                        android:layout_width="70dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/background_tombol_popup_setting_kupon">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="Save"
+                            android:textColor="#e40112"
+                            android:textSize="14dp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/btnCancel"
+                        android:layout_width="70dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_toLeftOf="@+id/btnSave"
+                        android:background="@drawable/background_tombol_popup_setting_kupon">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:text="Cancel"
+                            android:textColor="#50000000"
+                            android:textSize="14dp" />
+                    </RelativeLayout>-->
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

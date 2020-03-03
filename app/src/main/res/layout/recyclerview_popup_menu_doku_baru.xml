@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layoutPilihPaket"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="10dp"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="@dimen/image_rv_popup_beli_token_midtrans"
+        android:layout_height="@dimen/image_rv_popup_beli_token_midtrans"
+        android:src="@drawable/icon_doku_grey" />
+
+    <TextView
+        android:id="@+id/txtPaket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GOLD PACKAGES"
+        android:textColor="#000000"
+        android:textSize="@dimen/text_size_judul_paket"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtKeterangan"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/height_keterangan_paket"
+        android:text="Hanya Bisa Digunakan ke Cabang Tertentu"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="@dimen/text_size_keterangan_paket" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Harga "
+            android:textColor="#000000"
+            android:textSize="@dimen/text_size_harga_paket"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtHarga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:textSize="@dimen/text_size_harga_paket"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+
+    <RadioButton
+        android:id="@+id/pilihan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="false"
+        android:theme="@style/ThemeOverlay.AppCompat.Light" />
+</LinearLayout>

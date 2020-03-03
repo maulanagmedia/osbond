@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Osbond</string>
+    <string name="runtime_permissions_txt">Please enable requested service</string>
+    <string name="facebook_app_id">1877696922261235</string>
+    <string name="fb_login_protocol_scheme">fb1877696922261235</string>
+    <string name="mandiriText">Pastikan bahwa kartu Anda telah diaktivasi melalui layanan Mandiri Internet Banking pada menu mandiri clickpay agar dapat melakukan transaksi Internet Payment.</string>
+    <string name="mandiriTextToken">Gunakan Token PIN Mandiri untuk bertransaksi. Nilai yang dimasukkan pada token Anda (Metode APPLI 3)</string>
+    <string name="challengeCode1">Challenge Code 1</string>
+    <string name="challengeCode2">Challenge Code 2</string>
+    <string name="challengeCode3">Challenge Code 3</string>
+
+    <string name="vaText1">Paycode digunakan untuk membayar melalui channel ATM dan minimarket. Sertakan kode ini saat membayar di ATM atau minimarket. </string>
+
+    <string name="vaResult">Kami menyarankan agar pembayaran dilakukan secepatnya setelah pembeluan online. Pembayaran akan berakhir sesuai dengan ketentuan merchant, dimana pembelian akan batal apabila melewati jangka waktu tersebut</string>
+    <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
+</resources>

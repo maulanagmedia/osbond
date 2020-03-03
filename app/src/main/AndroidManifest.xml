@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="gmedia.net.id.osbond">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <!--<uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />-->
+
+    <application
+        android:name=".utils.CustomApplication"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        android:networkSecurityConfig="@xml/network_security_config"
+        tools:replace="android:allowBackup">
+        <!--<receiver android:name=".SmsReceiver">
+            <intent-filter android:priority="999">
+                <action android:name="android.provider.Telephony.SMS_RECEIVED" />
+            </intent-filter>
+        </receiver>-->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/provider_paths" />
+        </provider>
+
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_icon"
+            android:resource="@drawable/logo_osbond" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_color"
+            android:resource="@color/colorNotif" />
+        <meta-data
+            android:name="com.google.firebase.messaging.default_notification_channel_id"
+            android:value="@string/default_notification_channel_id" />
+
+        <service android:name=".firebase.MyFirebaseMessagingService">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".firebase.MyFirebaseInstanceIdService"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+            </intent-filter>
+        </service>
+        <service
+            android:name=".firebase.MyJobService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.firebase.jobdispatcher.ACTION_EXECUTE" />
+            </intent-filter>
+        </service>
+
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.facebook.CustomTabActivity"
+            android:exported="true"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="@string/fb_login_protocol_scheme" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Login"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <intent-filter>
+                <action android:name="ACT_CHAT" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Profile"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeMenu" />
+        <activity
+            android:name=".EKupon.EKupon"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeMenu" />
+        <activity
+            android:name=".QRCode"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeMenu" />
+        <activity
+            android:name=".EditProfile"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeMenu" />
+        <activity
+            android:name=".QRUser"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeMenu" />
+        <activity
+            android:name=".menuMidtrans.Midtrans"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeMidtrans" />
+        <activity
+            android:name=".menuMidtrans.MidtransBaru"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeMidtrans" />
+        <activity
+            android:name=".VerifikasiOtp"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppThemeMenu" />
+        <activity
+            android:name="com.journeyapps.barcodescanner.CaptureActivity"
+            android:screenOrientation="portrait"
+            tools:replace="screenOrientation" />
+        <!--
+        <activity android:name=".MenuDoku.Doku" />
+        <activity
+            android:name=".MenuDoku.ResultPayment"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MenuDoku.MandiriClickPay"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MenuDoku.VirtualAccount"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MenuDoku.VAResult"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MenuDoku.VirtualAccountAlfa"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MenuDoku.VAResultAlfa"
+            android:theme="@style/AppTheme.NoActionBar" />
+        -->
+
+
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="d6e520ed0459008b4c091a7b7e4b55f7c996e70b" />
+    </application>
+
+</manifest>

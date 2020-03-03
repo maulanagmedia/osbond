@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="action_button_padding">50dp</dimen>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="textSizeKuponBaru">13sp</dimen>
+
+    //pop up free token
+    <dimen name="margin_left__pop_up_free_token">20dp</dimen>
+    <dimen name="width_pop_up_free_token">310dp</dimen>
+    <dimen name="height_pop_up_free_token">400dp</dimen>
+    <dimen name="text_size_isian_pop_up_free_token">14sp</dimen>
+    <dimen name="text_size_btnOk_popup_free_token">14sp</dimen>
+
+    //pop up penjualan midtrans
+    <dimen name="width_popup_beli_token_midtrans">250dp</dimen>
+    <dimen name="height_popup_beli_token_midtrans">500dp</dimen>
+    <dimen name="text_size_judul_popup_beli_token_midtrans">20sp</dimen>
+    <dimen name="text_size_pilih_paket_popup_beli_token_midtrans">13sp</dimen>
+    <dimen name="height_isian_paket">180dp</dimen>
+    <dimen name="text_size_pilih_cabang_popup_beli_token_midtrans">13dp</dimen>
+    <dimen name="text_size_jumlah_popup_beli_token_midtrans">13sp</dimen>
+    <dimen name="text_size_isian_jumlah_popup_beli_token_midtrans">18sp</dimen>
+    <dimen name="text_size_button_beli_popup_beli_token_midtrans">14sp</dimen>
+
+    //recyclerView pop up penjualan midtrans
+    <dimen name="image_rv_popup_beli_token_midtrans">50dp</dimen>
+    <dimen name="text_size_judul_paket">14sp</dimen>
+    <dimen name="height_keterangan_paket">50dp</dimen>
+    <dimen name="text_size_keterangan_paket">10sp</dimen>
+    <dimen name="text_size_harga_paket">14sp</dimen>
+
+    //popup verifikasi
+    <dimen name="width_popup_verifikasi">300dp</dimen>
+    <dimen name="height_popup_verifikasi">350dp</dimen>
+    <dimen name="text_size_judul_popup_verifikasi">20sp</dimen>
+    <dimen name="text_size_judul_isi_popup_verifikasi">14sp</dimen>
+    <dimen name="text_size_keterangan_isi_popup_verifikasi">12sp</dimen>
+    <dimen name="text_size_harga_isi_popup_verifikasi">14sp</dimen>
+    <dimen name="text_size_jumlah_isi_popup_verifikasi">12sp</dimen>
+    <dimen name="text_size_subtotal_isi_popup_verifikasi">14sp</dimen>
+    <dimen name="text_size_isi_subtotal_isi_popup_verifikasi">20dp</dimen>
+    <dimen name="text_size_btnLanjut_isi_popup_verifikasi">14sp</dimen>
+
+</resources>
