@@ -251,7 +251,8 @@ public class MainActivity extends RuntimePermissionsActivity implements Transact
                                             isi.getString("image"),
                                             isi.getString("label"),
                                             isi.getString("keterangan"),
-                                            isi.getString("harga")
+                                            isi.getString("harga"),
+                                            isi.getString("flag")
                                     ));
                                 }
                                 recyclerView.setAdapter(null);

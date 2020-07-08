@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="Gradle: com.midtrans:analytics:1.4.5@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/8bb174d0b5e2f195c0d06b55ed68142e/jetified-analytics-1.4.5/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/8bb174d0b5e2f195c0d06b55ed68142e/jetified-analytics-1.4.5/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/0f321779ebcf53396b1ecd4f2a2b252a/jetified-analytics-1.4.5/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/0f321779ebcf53396b1ecd4f2a2b252a/jetified-analytics-1.4.5/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

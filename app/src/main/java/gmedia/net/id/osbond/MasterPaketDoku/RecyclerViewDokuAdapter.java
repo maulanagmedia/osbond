@@ -90,7 +90,7 @@ public class RecyclerViewDokuAdapter extends RecyclerView.Adapter<RecyclerViewDo
             @Override
             public void onClick(View v) {
                 lastPosition = position;
-                if (lastPosition == 0) {
+                if (rvData.get(position).getFlag().equals("1")) {
                     MainActivity.layoutDPCabang.setVisibility(View.GONE);
                     MainActivity.kosong = false;
                     MainActivity.posisiPaket = 1;

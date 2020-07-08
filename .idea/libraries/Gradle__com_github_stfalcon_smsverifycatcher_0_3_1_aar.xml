@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="Gradle: com.github.stfalcon:smsverifycatcher:0.3.1@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/76d39267a6daa936b814930f09fec8f2/jetified-smsverifycatcher-0.3.1/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/76d39267a6daa936b814930f09fec8f2/jetified-smsverifycatcher-0.3.1/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a84e644103e2db864ed1c0a6179f336a/jetified-smsverifycatcher-0.3.1/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a84e644103e2db864ed1c0a6179f336a/jetified-smsverifycatcher-0.3.1/res" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.github.stfalcon/smsverifycatcher/0.3.1/8beaac7e665d719115244fdbcf877ca29f7fedea/smsverifycatcher-0.3.1-javadoc.jar!/" />

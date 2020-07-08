@@ -7,8 +7,8 @@ android {
         applicationId "gmedia.net.id.osbond"
         minSdkVersion 16
         targetSdkVersion 28
-        versionCode 15
-        versionName "3.6.5"
+        versionCode 17
+        versionName "3.7.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         multiDexEnabled true
     }
@@ -65,8 +65,10 @@ dependencies {
     implementation 'androidx.multidex:multidex:2.0.0'
     implementation 'com.github.bumptech.glide:glide:3.7.0'
     //    implementation 'com.doku.sdkocov2:sdkocov2-release:1.0@aar'
-//        implementation 'com.midtrans:uikit:1.19.3-SANDBOX'// sample compiling sandbox
-    implementation 'com.midtrans:uikit:1.19.3'
+    //    implementation 'com.midtrans:uikit:1.19.3-SANDBOX'// sample compiling sandbox
+    // implementation 'com.midtrans:uikit:1.21.2-SANDBOX'
+    // implementation 'com.midtrans:uikit:1.19.3'
+    implementation 'com.midtrans:uikit:1.21.2'
     // change the number to the latest version
     implementation 'com.google.android.material:material:1.0.0'
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
@@ -77,7 +79,7 @@ dependencies {
                     implementation 'com.google.zxing:core:3.3.0'*/
     //        implementation project(':zxing-android-embedded')
     //    implementation 'com.journeyapps:zxing-android-embedded:3.5.0'
-    //implementation project(':zxing')
+
     implementation project(':library')
 }
 apply plugin: 'com.google.gms.google-services'

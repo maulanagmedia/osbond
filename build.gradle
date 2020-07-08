@@ -9,12 +9,14 @@ buildscript {
         maven {
             url 'https://maven.fabric.io/public'
         }
+        maven { url "http://dl.bintray.com/pt-midtrans/maven" }
+        maven { url "https://jitpack.io" }
 
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.5.1'
+        classpath 'com.android.tools.build:gradle:4.0.0'
         classpath 'com.google.gms:google-services:3.2.0'
-        classpath 'io.fabric.tools:gradle:1.25.4'
+        classpath 'io.fabric.tools:gradle:1.28.0'
         classpath 'com.jfrog.bintray.gradle:gradle-bintray-plugin:1.0'
 //        classpath 'com.dicedmelon.gradle:jacoco-android:0.1.2'
 
